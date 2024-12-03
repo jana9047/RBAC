@@ -3,7 +3,7 @@ const db = require('./db');
 const router = express.Router();
 
 
-db.connect(err => {
+db.connect(err => { 
     if (err) {
         console.error('Error connecting to MySQL:', err);
         return;
