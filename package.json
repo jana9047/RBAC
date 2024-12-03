@@ -144,7 +144,7 @@
     "wrappy": "^1.0.2"
   },
   "scripts": {
-  "start": "node server.js"
+  "start": "node Server/server.js"
 },
   "keywords": [],
   "author": "",
