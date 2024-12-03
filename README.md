@@ -28,25 +28,4 @@ Modify Permissions: Admins can change permissions for roles at any time to contr
 Mocked API calls simulate CRUD operations on users and roles.
 Simulate server responses to validate functionality.
 
-/rbac-ui
-│
-├── /css
-│   └── style.css          # Styles for the UI
-│
-├── /js
-│   ├── userManagement.js  # Handles user management operations
-│   ├── roleManagement.js  # Handles role management operations
-│   ├── permissionManagement.js  # Handles permissions for roles
-│   └── apiMock.js         # Simulates API calls for CRUD operations
-│
-├── /public
-│   ├── /images            # Image assets
-│   └── /fonts             # Font files (e.g., Font Awesome)
-│
-├── /views
-│   ├── index.html         # The main HTML page
-│   ├── userManagement.html # Page for managing users
-│   ├── roleManagement.html # Page for managing roles
-│   └── permissionManagement.html # Page for managing permissions
-│
-└── README.md              # This file
+
