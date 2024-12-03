@@ -85,10 +85,9 @@
     "minimist": "^1.2.8",
     "mkdirp-classic": "^0.5.3",
     "ms": "^2.0.0",
-    "msnodesqlv8": "^4.2.1",
     "mssql": "^11.0.1",
     "mysql": "^2.18.1",
-    "mysql2": "^3.11.3",
+    "mysql2": "^3.11.5",
     "nan": "^2.22.0",
     "napi-build-utils": "^1.0.2",
     "native-duplexpair": "^1.0.0",
@@ -144,8 +143,8 @@
     "wrappy": "^1.0.2"
   },
   "scripts": {
-  "start": "node Server/server.js"
-},
+    "start": "node Server/server.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC"
