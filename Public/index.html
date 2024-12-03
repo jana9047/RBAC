@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RBAC Home</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+    <link
+      href="http://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <script src="js/userManagement.js"></script>
+
+    <header class="header_section">
+      <div class="header_top">
+        <div class="container-fluid header_top_container">
+          <div class="lang_box dropdown">
+            <a
+              href="#"
+              title="Language"
+              class="nav-link"
+              data-toggle="dropdown"
+              aria-expanded="true"
+            >
+              <img src="images/india.webp" alt="flag" title="United Kingdom" />
+            </a>
+          </div>
+          <a
+            class="navbar-brand animate__animated animate__fadeInDown text-primary ml-5"
+            href="#"
+            >RBAC System</a
+          >
+          <div class="contact_nav">
+            <a href="tel:+01-123455678990">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>Call: +91 9789316305</span>
+            </a>
+
+            <a href="https://www.google.com/maps?q=10.120697,77.621344">
+              <i
+                class="fa fa-map-marker"
+                aria-hidden="true"
+                target="_blank"
+              ></i>
+              <span>Location</span>
+            </a>
+            <a
+              href="https://jana9047.github.io/Janarthanan_Portfolio/"
+              target="_blank"
+            >
+              <i class="fa fa-globe" aria-hidden="true"></i>
+              <span>My Website</span>
+            </a>
+            <a href="https://github.com/jana9047" target="_blank">
+              <img
+                src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+                alt="GitHub"
+                width="24"
+                height="24"
+              />
+              <span> Github</span>
+            </a>
+          </div>
+          <!-- <div class="social_box">
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div> -->
+        </div>
+      </div>
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class=""></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html"
+                    >Home <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="user-management.html"
+                    >User Management</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="role-management.html"
+                    >Role Management</a
+                  >
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="dynamic.html"
+                    >Dynamic Permissions</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="mt-5">
+      <div class="container">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://imgs.search.brave.com/yatd5vpNonNhmyxcLGc1tI1aoo427FyjGK6V-9FyUno/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA3Lzg3LzMyLzk5/LzM2MF9GXzc4NzMy/OTk0NV9jQ0FIaEJJ/RDlJOWpmQUpVT3pM/WGZCRHB0QkV5ZEJT/Zy5qcGc"
+                class="d-block w-100 h-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="text-danger">
+                  Transform Your Business with Innovation
+                </h5>
+                <p>
+                  Discover how cutting-edge technology and innovative solutions
+                  can streamline your operations and drive business growth. Stay
+                  ahead of the curve with our advanced tools and strategies
+                  designed to enhance productivity and efficiency.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://imgs.search.brave.com/IWEfLeeK6EpRP7p9ACFt_8ZOeAiw5ia0c12J8POGA0U/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNjM5/NDc1OTU4L3Bob3Rv/L2RhdGEtZW50cnku/d2VicD9hPTEmYj0x/JnM9NjEyeDYxMiZ3/PTAmaz0yMCZjPW1M/a2VyS1dXNjRhM2c2/TW9ZVENtODN0ZUkz/Smx1UUprRkFRLXhZ/SFUxdG89"
+                class="d-block w-100 h-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="text-danger">
+                  Unleash Your Creativity with Modern Solutions
+                </h5>
+                <p>
+                  Explore endless possibilities with our creative solutions
+                  tailored to bring your ideas to life. From design to
+                  development, we provide the resources and expertise to help
+                  you create groundbreaking products that stand out in the
+                  market.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://imgs.search.brave.com/FawESqaKZhh1k22QhcmFxwp_G5wp2-etjy7vAbwJ86A/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA5LzY2LzYxLzkz/LzM2MF9GXzk2NjYx/OTMwOF9rOThzWFdl/bmQxelFKTkU2ZTNt/c2h4eG5zZkhneHVB/OC5qcGc"
+                class="d-block w-100 h-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="text-danger">
+                  Elevate Your Experience with Seamless Integration
+                </h5>
+                <p>
+                  Experience the power of seamless integration across all
+                  platforms, ensuring smooth and uninterrupted user journeys.
+                  Our solutions are built to adapt to your unique needs,
+                  offering unparalleled flexibility and performance.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="about_section">
+      <div class="container mt-5 mb-5">
+        <div class="row mt-5">
+          <div class="col-md-6">
+            <div class="detail-box">
+              <div class="heading_container mt-5">
+                <h2>About Us</h2>
+              </div>
+              <p>
+                Role-Based Access Control (RBAC) is a powerful security
+                mechanism that restricts system access based on user roles. It
+                enables organizations to manage and enforce policies around who
+                can access specific resources and what actions they can perform.
+                By assigning users to predefined roles, RBAC ensures that only
+                authorized individuals have access to sensitive information,
+                improving data security and minimizing the risk of unauthorized
+                access.
+              </p>
+              <a href=""> Read More </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="img-box">
+              <img
+                src="https://imgs.search.brave.com/MfD_kLTsq2PM062oZyR31VJmZ0LeZdm2JJ7AnxqWTA8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/NTEyODgwNDktYmVi/ZGE0ZTM4ZjcxP2Zt/PWpwZyZxPTYwJnc9/MzAwMCZpeGxpYj1y/Yi00LjAuMyZpeGlk/PU0zd3hNakEzZkRC/OE1IeHpaV0Z5WTJo/OE5IeDhaR0YwWVh4/bGJud3dmSHd3Zkh4/OE1BPT0.jpeg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="whyRBAC" class="py-5 bg-light">
+      <div class="container text-center">
+        <h2 class="mb-4 animate__animated animate__fadeInUp">
+          Why Choose RBAC?
+        </h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card shadow-sm animate__animated animate__fadeInLeft">
+              <img src="images/1.webp" class="card-img-top" alt="Security" />
+              <div class="card-body">
+                <h5 class="card-title">Security</h5>
+                <p class="card-text">
+                  RBAC ensures high-level security by limiting access to
+                  sensitive information based on user roles.
+                </p>
+                <a href="#features" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm animate__animated animate__fadeInUp">
+              <img src="images/2.webp" class="card-img-top" alt="Ease of Use" />
+              <div class="card-body">
+                <h5 class="card-title">Ease of Use</h5>
+                <p class="card-text">
+                  With a user-friendly interface, managing users and roles
+                  becomes simple and efficient for administrators.
+                </p>
+                <a href="#features" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm animate__animated animate__fadeInRight">
+              <img src="images/3.webp" class="card-img-top" alt="Scalability" />
+              <div class="card-body">
+                <h5 class="card-title">Scalability</h5>
+                <p class="card-text">
+                  Your organization grows scales effortlessly to handle more
+                  users without compromising performance.
+                </p>
+                <a href="#features" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="py-5 bg-light">
+      <div class="container text-center">
+        <h2 class="mb-4 animate__animated animate__fadeInUp">Features</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card shadow-sm animate__animated animate__fadeInLeft">
+              <div class="card-body">
+                <h5 class="card-title">User Management</h5>
+                <p class="card-text">Add, edit, and remove users with ease.</p>
+
+                <a href="user-management.html" class="btn btn-primary"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm animate__animated animate__fadeInUp">
+              <div class="card-body">
+                <h5 class="card-title">Role Management</h5>
+                <p class="card-text">
+                  Define roles and assign permissions dynamically.
+                </p>
+
+                <a href="role-management.html" class="btn btn-primary"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm animate__animated animate__fadeInRight">
+              <div class="card-body">
+                <h5 class="card-title">Dynamic Permissions</h5>
+                <p class="card-text">
+                  Customize permissions to suit your needs.
+                </p>
+
+                <a href="dynamic.html" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact_section layout_padding mt-5 mb-5">
+      <div class="container">
+        <div class="heading_container mb-5">
+          <h2>Contact Us</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <form action="">
+              <div>
+                <input type="text" placeholder="Name" class="form-control" />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  placeholder="Phone Number"
+                  class="form-control"
+                />
+              </div>
+              <div>
+                <input type="email" placeholder="Email" class="form-control" />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  class="message-box form-control"
+                  placeholder="Message"
+                />
+              </div>
+              <div class="d-flex">
+                <button>SEND</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <div class="map_container">
+              <div class="map">
+                <div id="googleMap" style="width: 100%; height: 100%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white py-3">
+      <div class="container text-center">
+        <p>&copy; 2024 RBAC System. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      function initMap() {
+        var location = { lat: 11.362828787475614, lng: 77.82789166810669 }; // Example coordinates, replace with actual ones
+        var map = new google.maps.Map(document.getElementById("googleMap"), {
+          zoom: 8,
+          center: location,
+        });
+        var marker = new google.maps.Marker({
+          position: location,
+          map: map,
+        });
+      }
+    </script>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=initMap"
+      async
+      defer
+    ></script>
+  </body>
+</html>

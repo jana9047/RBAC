@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Permission Management</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <script src="/js/dynamicManagement.js"></script>
+
+    <div class="header_bottom mt-5">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class=""></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="user-management.html"
+                  >User Management</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="role-management.html"
+                  >Role Management</a
+                >
+              </li>
+
+              <li class="nav-item active">
+                <a class="nav-link" href="dynamic.html">Dynamic Permissions</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <main class="container mt-5">
+      <div class="text-center mb-4">
+        <h2 class="animate__animated animate__fadeInLeft">
+          Dynamic Permission Management
+        </h2>
+        <p class="text-muted">Manage permissions dynamically for each role.</p>
+      </div>
+
+      <section id="permission-crud">
+        <div class="container">
+          <input type="hidden" id="permissionId" name="permissionId" />
+
+          <div class="card mb-4 mt-4">
+            <div class="card-body">
+              <h5 class="card-title">Create New Permission</h5>
+              <form id="permissionForm">
+                <div class="mb-3">
+                  <label for="permissionName" class="form-label"
+                    >Permission Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="permissionName"
+                    placeholder="Enter permission name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="permissionDescription" class="form-label"
+                    >Permission Description</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="permissionDescription"
+                    placeholder="Describe the permission"
+                    required
+                  />
+                </div>
+                <button type="submit" class="btn btn-success">
+                  Add Permission
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">View Permissions</h5>
+              <table class="table" id="permissionTable">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Permission Name</th>
+                    <th>Description</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>View Dashboard</td>
+                    <td>Allows access to the dashboard</td>
+                    <td>
+                      <button class="btn btn-sm btn-warning">
+                        <i class="fas fa-edit"></i> Edit
+                      </button>
+                      <button class="btn btn-sm btn-danger">
+                        <i class="fas fa-trash"></i> Delete
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Manage Users</td>
+                    <td>Allows adding, editing, or deleting users</td>
+                    <td>
+                      <button class="btn btn-sm btn-warning">
+                        <i class="fas fa-edit"></i> Edit
+                      </button>
+                      <button class="btn btn-sm btn-danger">
+                        <i class="fas fa-trash"></i> Delete
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <nav>
+        <ul class="pagination justify-content-center">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+  </body>
+</html>
